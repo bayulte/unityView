@@ -2229,6 +2229,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Input_get_touchCount_m057388BFC67A0F4
 	int32_t icallRetVal = _il2cpp_icall_func();
 	return icallRetVal;
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Input_set_backButtonLeavesApp_m6F6F10C484FA91D9956F0301ECF99D95359483C4 (bool ___0_value, const RuntimeMethod* method) 
+{
+	typedef void (*Input_set_backButtonLeavesApp_m6F6F10C484FA91D9956F0301ECF99D95359483C4_ftn) (bool);
+	static Input_set_backButtonLeavesApp_m6F6F10C484FA91D9956F0301ECF99D95359483C4_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Input_set_backButtonLeavesApp_m6F6F10C484FA91D9956F0301ECF99D95359483C4_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::set_backButtonLeavesApp(System.Boolean)");
+	_il2cpp_icall_func(___0_value);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* Input_get_location_m1D1FA0938E5B83C46A666CE78D95A58B39164DB5 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
