@@ -19,16 +19,10 @@ function HomeScreen({ navigation }) {
 function DetailsScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Details Screen</Text>
+      <Text>Home Screen</Text>
       <Button
-        title="Go to Details... again"
-        onPress={() => navigation.push('Details')}
-      />
-      <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
-      <Button title="Go back" onPress={() => navigation.goBack()} />
-      <Button
-        title="Go back to first screen in stack"
-        onPress={() => navigation.popToTop()}
+        title="Go to Details"
+        onPress={() => navigation.navigate('UnityView')}
       />
     </View>
   );
@@ -41,7 +35,8 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Details" component={UnityView} />
+        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="UnityView" component={UnityView} />
       </Stack.Navigator>
     </NavigationContainer>
   );
